@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Sample to use viewport meta for Zetakey browser</title>
+
+</head>
+
+<body>
+<h1>Sample to use viewport meta for Zetakey browser</h1>
+
+<p>This page does not set any viewport meta data.</p>
+
+<p>You may try different viewport setting to see what is best fit your application.</p>
+
+<form action="viewport.php" method="get">
+<br/>
+<select name="imagesize" size="1">
+  <option value="320" selected="selected">320x320 Image</option>
+  <option value="500">500x500 Image</option>
+</select><br />
+
+
+<h3>Viewport content: </h3>
+
+<input type="radio" name="content" value="width=device-width" checked>width=device-width <br/>
+<input type="radio" name="content" value="width=590">width=590<br/>
+<input type="radio" name="content" value="height=device-height">height=device-height<br/>
+<input type="radio" name="content" value="height=750">height=750<br/>
+<input type="radio" name="content" value="initial-scale=1.0">initial-scale=1.0<br/>
+<input type="radio" name="content" value="initial-scale=2.0">initial-scale=2.0<br/>
+<input type="radio" name="content" value="initial-scale=0.5">initial-scale=0.5<br/>
+<input type="radio" name="content" value="initial-scale=2.3, user-scalable=no">initial-scale=2.3, user-scalable=no<br/>
+<input type="radio" name="content" value="user-scalable=no">user-scalable=no<br/>
+<input type="radio" name="content" value="user-scalable=no, width=device-width">user-scalable=no, width=device-width<br/>
+<input type="radio" name="content" value="width=device-width, user-scalable=no">width=device-width, user-scalable=no<br/>
+<input type="radio" name="content" value="width=500, initial-scale=1">width=500, initial-scale=1<br/>
+<input type="radio" name="content" value="initial-scale=1, maximum-scale=1">initial-scale=1, maximum-scale=1<br/>
+<input type="radio" name="content" value="initial-scale=1, maximum-scale=1, minimum-scale=1">initial-scale=1, maximum-scale=1, minimum-scale=1<br/>
+<input style='width:90%' type="text" name="ucontent" placeholder="Try your own viewport setting"><br>
+
+<input type="submit" value="Submit">
+</form>
+
+<div>
+<h3>Further reading</h3>
+<ol>
+	<li><a href="https://developer.apple.com/library/mac/documentation/AppleApplications/Reference/SafariWebContent/UsingtheViewport/UsingtheViewport.html">Mac Developer Library</a></li>
+	<li><a href="https://developer.mozilla.org/en-US/docs/Mozilla/Mobile/Viewport_meta_tag">Mozilla Developer Network</a></li>
+</ol>
+</div>
+
+<a href="index.html">Try other viewport settings</a>
+</body>
+
+</html>
+
